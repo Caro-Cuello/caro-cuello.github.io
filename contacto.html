@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fuentes-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Iconos -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Favicon-->
+    <link rel="icon" type="icon" href=assets/favicon/favicon.ico />
+    <!-- Hoja de Estilos (CSS)-->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://www.google.com/recaptcha/api.js?hl=es"></script>
+    <title>Contacto</title>
+  </head>
+  <!--Inicio de Página Web -->
+  <body>
+    <!--Menú de Navegación-->
+    <header class="header">
+      <div class="logo-header">
+        <a href="index.html"> <img src="assets/img/logo.png" alt="logo" /></a>
+      </div>
+      <nav class="nav-menu">
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn" class="menu-icon">
+          <i class="bx bx-menu"></i>
+        </label>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="teatro.html">Teatro</a></li>
+          <li><a href="agenda.html">Agenda</a></li>
+          <li><a href="bar.html">Bar</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Inicio Formulario -->
+    <main>
+      <section class="contenedor-formulario">
+        <div class="contenedor-informacion">
+          <h1>CONTACTO</h1>
+          <p class="parrafo"><b>¿Querés Contactarnos?</b></p>
+          <p>
+            Sí tenés algún proyecto en mente, deseas unirte a la producción,
+            necesitas un evento privado o querés comentarnos tus sugerencias,
+            dudas o inquietudes. Completá el formulario y pronto te
+            contactaremos.<br />¡Muchas Gracias!
+          </p>
+        </div>
+        <form
+          action="https://formsubmit.co/carocuello.89@gmail.com"
+          method="POST"
+          class="formulario"
+          id="formulario"
+        >
+          <label>Tipo de Evento</label>
+          <select name="evento">
+            Tipo de Evento
+            <option value="" selected disabled>- Ninguno-</option>
+            <option value="conferencia">Conferencia</option>
+            <option value="recital">Recital</option>
+            <option value="muestra">Muestra de Danza /Canto</option>
+            <option value="homenaje">Homenaje o Tributo</option>
+            <option value="comedia">Stand Up / Comedia</option>
+            <option value="teatro">Teatro</option>
+          </select>
+
+          <label>Sala</label>
+          <select name="opera/teatro">
+            <option value="" selected disabled>- Ninguno-</option>
+            <option value="opera">Opera</option>
+            <option value="teatro">El Teatro</option>
+          </select>
+
+          <label for="artista"> Artista / Show </label>
+          <input id="artista" name="artista/show" />
+          <label for="productora"> Productora </label>
+          <input id="productora" name="productora" />
+          <label>Fecha Estimada</label>
+          <input type="date" name="fecha" />
+          <label for="name">Nombre</label>
+          <input type="text" id="name" />
+          <label for="surname">Apellido</label>
+          <input type="text" id="surname" />
+          <label for="telefono">Teléfono de Contacto </label>
+          <input type="tel" name="telefono" id="telefono" />
+          <label for="email"> Correo Electrónico</label>
+          <input type="email" id="email" name="email" />
+          <label>Mensaje (Opcional)</label>
+          <textarea> </textarea>
+          <div
+            class="g-recaptcha"
+            data-sitekey="6LcePAATAAAAAGPRWgx90814DTjgt5sXnNbV5WaW"
+          ></div>
+
+          <button onclick="enviarFormulario()">Enviar</button>
+          <input
+            type="hidden"
+            name="_next"
+            value="http://127.0.0.1:5500/contacto.html"
+          />
+          <input type="hidden" name="_captcha" value="false" />
+          <p class="warnings" id="warnings"></p>
+        </form>
+      </section>
+    </main>
+    <!--Pie de Página-->
+    <footer class="pie-pagina">
+      <div class="whatsaap">
+        <a
+          href="https://wa.me/5491140912402?text=Hola,%20Gracias%20por%20cominicarte.%20%C2%A1Pronto%20ser%C3%A1s%20atentido!%20"
+          target="_blank"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+      </div>
+      <div class="grupo-1">
+        <div class="box">
+          <h2>Sobre Nosotros</h2>
+          <p class="parrafo-pie">
+            Somos un espacio único para la comunidad en general, donde asiste
+            público de todos los segmentos sociales. Nuestro objetivo principal
+            es fomentar la creatividad, el arte y mejorar las habilidades
+            sociales y expresivas.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Agenda</h2>
+          <a href="#">Desestafada</a>
+          <a href="#">Abuelita Mía</a>
+          <a href="#">La Oferta</a>
+          <a href="#">Astro Relax</a>
+        </div>
+        <div class="box">
+          <h2>4 Fantásticos</h2>
+          <a href="teatro.html">Ubicación</a>
+          <a href="contacto.html">Contacto</a>
+          <a href="terminos_y_condiciones.html">Términos y Condiciones</a>
+          <a href="#">Política de Privacidad</a>
+        </div>
+        <div class="box">
+          <h2>Síguenos</h2>
+          <div class="red-social">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-youtube"></i>
+          </div>
+        </div>
+      </div>
+      <div class="grupo-2">
+        <small
+          >&copy; 2023 <b>Teatro Bar- Los 4 Fantásticos</b> - Todos los Derechos
+          Reservados.</small
+        >
+      </div>
+      <div class="grupo-3">
+        <p class="firma">Desarollado por L. Carolina Cuello</p>
+      </div>
+    </footer>
+    <script src="js/formulario-scrip.js"></script>
+  </body>
+</html>
