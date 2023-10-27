@@ -64,4 +64,4 @@
 
 ## 11. Fecha de Entrega:
 
-- Semana del 17 al 20 de octubre de 2023.
+- Semana del 23 al 27 de octubre de 2023.
