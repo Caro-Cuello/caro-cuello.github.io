@@ -135,6 +135,7 @@ header {
 .contenedor-formulario {
     color: #000000;
     background-color: #FFF;
+    padding-bottom: 50px;
 }
 
 .contenedor-informacion h1 {
@@ -162,23 +163,18 @@ header {
     box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.7);
 }
 
-.formulario select,
 .formulario input,
 .formulario label,
 .formulario textarea {
     display: block;
-    width: 100%;
+    height: 1.5rem;
+    width: 95%;
     margin-bottom: .5rem;
 }
 
 .formulario input,
 .formulario textarea {
     color: #686869;
-}
-
-.g-recaptcha {
-    display: grid;
-    justify-content: center;
 }
 
 .formulario button {
